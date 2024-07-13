@@ -1,0 +1,94 @@
+// SankeyMATIC diagram inputs - Saved: 7/13/2024, 3:31:22 PM
+// https://sankeymatic.com/build/
+
+// === Nodes and Flows ===
+
+// Sample Job Search diagram:
+Applications [31] 1st Round
+Applications [131] Rejected
+Applications [363] No Answer
+
+1st Round [10] Rejected
+1st Round [1] I Said No
+1st Round [3] Position Canceled 
+1st Round [9] Ghosted
+1st Round [9] 2nd Round
+
+2nd Round [4] Ghosted
+2nd Round [1] Rejected
+2nd Round [4] 3rd Round
+
+3rd Round [1] Rejected 
+3rd Round [3] 4th Round
+
+4th Round [1] Ghosted
+4th Round [1] Rejected
+4th Round [1] Offer
+
+// === Settings ===
+
+size w 1000
+  h 600
+margin l 1
+  r 30
+  t 18
+  b 20
+bg color #ffffff
+  transparent N
+node w 16
+  h 36
+  spacing 49
+  border 0
+  theme a
+  color #5e6164
+  opacity 1
+flow curvature 0.22
+  inheritfrom target
+  color #999999
+  opacity 0.6
+layout order automatic
+  justifyorigins N
+  justifyends N
+  reversegraph N
+  attachincompletesto nearest
+labels color #000000
+  hide N
+  highlight 0.55
+  fontface monospace
+  linespacing 0
+  relativesize 115
+  magnify 100
+labelname appears Y
+  size 16
+  weight 700
+labelvalue appears Y
+  fullprecision Y
+  position above
+  weight 700
+labelposition autoalign 1
+  scheme auto
+  first before
+  breakpoint 7
+value format ',.'
+  prefix ''
+  suffix ''
+themeoffset a 6
+  b 9
+  c 0
+  d 0
+meta mentionsankeymatic Y
+  listimbalances Y
+
+// === Moved Nodes ===
+
+move Rejected -0.3893, -0.00681
+move Applications -0.01662, -0.36899
+move No Answer 0.04404, -0.00203
+move 1st Round 0.0025, -0.03177
+move Ghosted -0.42667, 0.01999
+move 2nd Round -0.005, 0.00976
+move 3rd Round 0.09836, 0.12362
+move I Said No 0.06532, -0.03564
+move Position Canceled 0.1214, 0.00179
+move Offer 0, -0.0695
+move 4th Round 0.02037, -0.04826
